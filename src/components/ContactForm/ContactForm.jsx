@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
 import Notiflix from 'notiflix';
-import { Form, Input, Button, Text } from './ContactForm.styled';
+// import IconButton from 'components/IconButton/IconButton';
+import { ReactComponent as AddIcon } from '../icons/plus-user.svg';
+import { Form, Input, Text, Button } from './ContactForm.styled';
 
 class ContactForm extends Component {
   
@@ -60,7 +62,7 @@ class ContactForm extends Component {
     const { name, number } = this.state;
 
     return (
-      <Form onSubmit={this.handleSubmit}>
+      <Form onClick={this.handleSubmit}>
         <Text>Name</Text>
         <Input
           type="text"
@@ -81,7 +83,8 @@ class ContactForm extends Component {
           value={number}
           onChange={this.handleNumberChange}
         />
-        <Button type="submit">Add Contact</Button>
+        <Button><AddIcon width='40' height='30' /></Button>
+        
       </Form>
     );
   }

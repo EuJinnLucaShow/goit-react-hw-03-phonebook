@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// import IconButton from 'components/IconButton/IconButton';
+import { ReactComponent as AddIcon } from '../icons/minus-user.svg';
 import { ContactItems, ContactName, ContactNumber, Button } from './ContactList.styled'
 
 function ContactList({ contacts, deleteContact }) {
@@ -21,7 +23,7 @@ function ContactItem({ contact, deleteContact }) {
     <ContactItems>
       <ContactName>{contact.name}</ContactName>
       <ContactNumber>{contact.number}</ContactNumber>
-      <Button onClick={handleDelete}>Delete</Button>
+      <Button onClick={handleDelete}><AddIcon width='30' height='20'/></Button>
     </ContactItems>
   );
 }

@@ -13,7 +13,7 @@ export const ContactName = styled.span`
 `;
 
 export const ContactNumber = styled.span`
-  /* flex: 1; */
+  margin-right: 20px;
 `;
 
 export const Button = styled.button`
@@ -24,5 +24,8 @@ export const Button = styled.button`
   border: 1px solid;
     :hover {
     background-color: #e0e0e0;
+    > svg {
+  fill: #f50505;
+  }
   }
 `;
