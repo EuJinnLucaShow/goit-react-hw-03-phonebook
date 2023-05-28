@@ -83,7 +83,7 @@ class ContactForm extends Component {
           value={number}
           onChange={this.handleNumberChange}
         />
-        <Button><AddIcon width='40' height='30' /></Button>
+        <Button><AddIcon /></Button>
         
       </Form>
     );

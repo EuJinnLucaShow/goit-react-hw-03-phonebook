@@ -23,7 +23,7 @@ function ContactItem({ contact, deleteContact }) {
     <ContactItems>
       <ContactName>{contact.name}</ContactName>
       <ContactNumber>{contact.number}</ContactNumber>
-      <Button onClick={handleDelete}><AddIcon width='30' height='20'/></Button>
+      <Button onClick={handleDelete}><AddIcon /></Button>
     </ContactItems>
   );
 }

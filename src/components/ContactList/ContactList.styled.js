@@ -13,11 +13,15 @@ export const ContactName = styled.span`
 `;
 
 export const ContactNumber = styled.span`
-  margin-right: 20px;
+  /* margin-right: 20px; */
 `;
 
 export const Button = styled.button`
-  padding: 5px 20px;
+  > svg {
+  width:30px;
+  height:20px;
+}
+  /* padding: 5px 20px; */
   margin-left: 20px;  
   font-size: 14px;
   border-radius: 6px;

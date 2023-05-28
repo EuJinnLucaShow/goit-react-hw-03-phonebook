@@ -16,7 +16,11 @@ export const Input = styled.input`
   box-shadow: 0 1px 6px 0 #20212447;
 `;
 
-export const Button = styled.button`  
+export const Button = styled.button`
+  > svg {
+  width:40px;
+  height:30px;
+}
   /* padding: 10px 20px; */
   margin-top: 5px;
   font-size: 14px;
